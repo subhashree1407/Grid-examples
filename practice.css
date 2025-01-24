@@ -1,0 +1,60 @@
+body{
+  font-family: Arial,sans-sarif;
+  margin: 0;
+  padding: 0;
+}
+.grid-container{
+  display: grid;
+  grid-template-areas: 
+  "A B"
+  "A C";
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  height: 100vh;
+}
+.A{
+  grid-area: A;
+  /* background-color: green;
+  color: white; */
+  text-align: center;
+  /* padding: 1rem; */
+  background-color: rgb(113, 235, 113);
+  align-content: center;
+}
+.B{
+  grid-area: B;
+  background-color: rgb(11, 138, 138);
+  align-content: center;
+  text-align: center;
+  /* padding: 1rem;
+  border-right: 1px solid #ddd; */
+}
+.C{
+  grid-area: C;
+  background-color: rgb(221, 233, 54);
+  align-content: center;
+  text-align: center;
+  /* padding: 1rem; */
+}
+/* .footer{
+  grid-area: footer;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+@media (max-width: 768px){
+  .grid-container{
+    grid-template-areas: 
+    "header"
+    "main"
+    "sidebar"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  }
+  .sidebar{
+    border-right: none;
+    border-top: 1px solid #ddd;
+  }
+  /* must be added in project */
